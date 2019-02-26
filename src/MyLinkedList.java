@@ -1,3 +1,4 @@
+/*
 package Main;
 public class MyLinkedList {
 
@@ -19,3 +20,4 @@ public class MyLinkedList {
     }
 
 }
+*/
