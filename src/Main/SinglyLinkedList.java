@@ -70,9 +70,7 @@ public class SinglyLinkedList {
        /* Node newNode= new Node(data , node.next);
         node.next = newNode;*/
        node.next = new Node(data , node.next);
-
-        size++;
-
+       size++;
     }
      public void insert(int data){
      if(head==null){
