@@ -36,10 +36,11 @@ public class SinglyLinkedList {
     public static void main(String[] args){
         SinglyLinkedList linkedList= new SinglyLinkedList();
         System.out.println(linkedList);
-        for (int i = 0; i < 5; i++) {
+        /*for (int i = 0; i < 5; i++) {
             linkedList.insertHead(i+1);
-        }
+        }*/
         linkedList.insertHead(42);
+        linkedList.insertHead(66);
         System.out.println(linkedList);
     }
     @Override
@@ -73,5 +74,16 @@ public class SinglyLinkedList {
         size++;
 
     }
-
+     public void insert(int data){
+     if(head==null){
+         insertHead(data);
+     }
+     else {
+         Node temp = this.head;
+         while (temp.next!=null){
+             temp=temp.next;
+         }
+         insertAfter(data,temp);
+     }
+    }
 }
